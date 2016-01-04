@@ -2,6 +2,7 @@
 const gulp = require('gulp');
 const named = require('vinyl-named');
 const run = require('run-sequence');
+const del = require('del');
 const $ = require('gulp-load-plugins')();
 const browserSync = require('browser-sync').create();
 $.webpack = require('webpack-stream');
@@ -101,6 +102,4 @@ const libs = [
 ];
 gulp.task('copy', () => gulp.src(libs).pipe(gulp.dest(tmp.lib)));
 
-gulp.task('clean', done => {
-  return gulp.src(['.tmp', 'dist']).pipe($.clean());
-});
+gulp.task('clean', () => del(['.tmp', 'dist']));
