@@ -1,0 +1,8 @@
+@import 'hello';
+
+$color: red;
+
+.red {
+  color: $color;
+  background-color: #fff;
+}

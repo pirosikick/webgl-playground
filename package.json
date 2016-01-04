@@ -1,0 +1,50 @@
+{
+  "name": "hiden-no-tare.web",
+  "description": "@pirosikick's secret sauce for creating web application",
+  "version": "0.0.1",
+  "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
+  "bin": {
+    "hiden-no-tare.web": "bin/init.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pirosikick/hiden-no-tare.web/issues"
+  },
+  "dependencies": {
+    "es6-promise": "^3.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.2.2",
+    "ava": "^0.8.0",
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "browser-sync": "^2.10.1",
+    "cssnano": "^3.4.0",
+    "fixpack": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "precss": "^1.3.0",
+    "run-sequence": "^1.1.5",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^1.12.9",
+    "webpack-stream": "^3.1.0"
+  },
+  "homepage": "https://github.com/pirosikick/hiden-no-tare.web#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirosikick/hiden-no-tare.web.git"
+  },
+  "scripts": {
+    "fixpack": "fixpack",
+    "start": "gulp",
+    "test": "ava"
+  }
+}
